@@ -10,15 +10,3 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-    // Function to reload the body content
-    function reloadBody() {
-        location.reload(); // This will reload the entire page
-    }
-
-    // Set an interval to reload the body every 3 seconds
-    setInterval(reloadBody, 2000); // 3000ms = 3 seconds
-});
-
-
