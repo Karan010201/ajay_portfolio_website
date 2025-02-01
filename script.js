@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Set an interval to reload the body every 3 seconds
-    setInterval(reloadBody, 3000); // 3000ms = 3 seconds
+    setInterval(reloadBody, 2000); // 3000ms = 3 seconds
 });
 
 
