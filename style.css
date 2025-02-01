@@ -11,6 +11,73 @@ body {
     background-color: rgb(1, 1, 45);
 }
 
+.screen-load {
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99.99vw;
+    z-index: 1;
+}
+
+.screen-load-progress {
+    border: 1px solid white;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(1, 1, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.load {
+    height: 7px;
+    width: 0px;
+    border: 1px solid white;
+    background-color: white;
+    padding: 1px;
+    animation-name: loader;
+    animation-duration: 2s;
+    font-size: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load p{
+    color: black;
+    font-weight: 900;
+}
+
+@keyframes loader {
+    0% {
+        width: 1px;
+    }
+
+
+    100% {
+        width: 190px;
+    }
+}
+
+
+.load-process {
+    height: 10px;
+    border-radius: 3px;
+    width: 190px;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid white;
+    
+}
+
+
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -21,7 +88,7 @@ nav {
     box-shadow: 1px 11px 44px black;
 }
 
-nav{
+nav {
     position: sticky;
     top: 0px;
 }
@@ -34,20 +101,27 @@ nav{
 
 
 .buttons {
-    text-align: center; /* Center the text */
-    opacity: 0; /* Start with hidden text */
-    transform: translateY(50px); /* Start with text below its normal position */
-    animation: text-rise 1s ease-out forwards; /* Animation name, duration, easing, and end state */
+    text-align: center;
+    /* Center the text */
+    opacity: 0;
+    /* Start with hidden text */
+    transform: translateY(50px);
+    /* Start with text below its normal position */
+    animation: text-rise 1s ease-out forwards;
+    /* Animation name, duration, easing, and end state */
 }
 
 @keyframes text-rise {
     0% {
         opacity: 0;
-        transform: translateY(50px); /* Start below */
+        transform: translateY(50px);
+        /* Start below */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* End at its original position */
+        transform: translateY(0);
+        /* End at its original position */
     }
 }
 
@@ -86,23 +160,26 @@ nav{
 }
 
 @keyframes nameAnimation {
-    0%{
+    0% {
         font-weight: 600;
         letter-spacing: 12px;
     }
-    100%{
+
+    100% {
         font-size: 800;
     }
 }
 
 
 @keyframes nameAnimationSmScreen {
-    0%{
+    0% {
         letter-spacing: 5px;
     }
 }
+
 #gear i {
-    display: inline-block; /* Ensures the icon can be transformed */
+    display: inline-block;
+    /* Ensures the icon can be transformed */
     animation: gear 5s linear infinite;
     margin-right: 10px;
 }
@@ -113,15 +190,17 @@ nav{
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
 
-.intro-box-one h1:hover{
+.intro-box-one h1:hover {
     font-weight: 400;
 }
+
 .intro-box-one h3 {
     margin: 20px 0;
 }
@@ -142,13 +221,14 @@ nav{
     0% {
         box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
     }
+
     100% {
         box-shadow: 4px 4px 230px rgba(255, 255, 255, 0.8);
     }
 }
 
 
-.hire-me{
+.hire-me {
     height: 40px;
     width: 100px;
     background-color: blue;
@@ -157,10 +237,11 @@ nav{
     border-radius: 10px;
 }
 
-.hire-me:hover{
+.hire-me:hover {
     opacity: 0.8;
 }
-.aboutme{
+
+.aboutme {
     height: 40px;
     background-color: white;
     color: black;
@@ -169,63 +250,69 @@ nav{
     border: none;
 }
 
-.aboutme:hover{
+.aboutme:hover {
     opacity: 0.8;
 }
 
-.buttons{
+.buttons {
     margin-top: 30px;
 }
-.intro-box-two:hover{
+
+.intro-box-two:hover {
     box-shadow: 1px 1px 11px white;
 }
-.intro-container{
+
+.intro-container {
     margin-top: 50px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 @media (max-width:940px) {
-    .intro-box-one h1{
+    .intro-box-one h1 {
         font-size: 43px;
         animation-name: nameAnimationSmScreen;
     }
-    #profile-img{
+
+    #profile-img {
         height: 100px;
     }
-   
+
 }
 
 
 
 @media (max-width:730px) {
-    .intro-container{
+    .intro-container {
         flex-direction: column-reverse;
     }
-    .intro-box-one{
+
+    .intro-box-one {
         height: 300px;
         width: 300px;
     }
-    .intro-box-two{
+
+    .intro-box-two {
         min-width: 200px;
         height: 200px;
     }
-    #profile-img{
+
+    #profile-img {
         height: 200px;
         width: 200px;
     }
 
 }
 
-hr{
+hr {
     height: 1px;
-    border:none;
+    border: none;
     background-color: white;
     margin: 0 90px;
 }
 
-.skills{
+.skills {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -234,7 +321,7 @@ hr{
 
 
 
-h2{
+h2 {
     text-align: center;
     margin: 30px;
     animation-name: h2Animation;
@@ -242,15 +329,16 @@ h2{
 }
 
 @keyframes h2Animation {
-    0%{
+    0% {
         font-weight: 900;
     }
-    100%{
+
+    100% {
         font-weight: 600px;
     }
 }
 
-.skills-logo{
+.skills-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,42 +346,43 @@ h2{
     margin: 20px auto;
 }
 
-.skills-logo i{
+.skills-logo i {
     font-size: 60px;
     margin: 30px;
 }
 
-.skills-logo i:hover{
-   color: rgb(201, 201, 201);
+.skills-logo i:hover {
+    color: rgb(201, 201, 201);
 }
 
-.experience-div{
+.experience-div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.experience-div p{
+
+.experience-div p {
     font-size: 12px;
     margin: 30px;
     color: gray;
 }
 
-.project-container{
+.project-container {
     display: flex;
     flex-direction: column;
     padding: 0 30px;
 }
 
-.project-img{
+.project-img {
     height: 100px;
     width: 100px;
     background-color: gray;
     border-radius: 50%;
-    
+
 }
 
-.project-box{
+.project-box {
     margin: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -301,49 +390,62 @@ h2{
     margin-bottom: 30px;
 }
 
-footer p{
+footer p {
     text-align: center;
     font-size: 12px;
     padding: 0 30px;
     margin-bottom: 20px;
 }
 
-#profile-img{
+#profile-img {
     height: 300px;
     border-radius: 50%;
 }
+
 @media (max-width: 731px) {
     #profile-img {
-        height: 200px;   /* Ensure the height is 200px */
-        width: 200px;    /* Ensure the width is also 200px */
+        height: 200px;
+        /* Ensure the height is 200px */
+        width: 200px;
+        /* Ensure the width is also 200px */
     }
+
 }
 
+.dark-mode {
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    border-radius: 50px;
+    top: 10px;
+    width: 80px;
+    background-color: white;
+}
 
-.contact-form{
+.contact-form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-form form{
+.contact-form form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
 }
 
-.contact-form form input{
+.contact-form form input {
     height: 30px;
     width: 240px;
     text-align: center;
     border: none;
     border-radius: 10px;
     color: black;
-   
+
 }
 
-.contact-form form button{
+.contact-form form button {
     background-color: #4CAF50;
     height: 40px;
     margin-bottom: 20px;
@@ -351,6 +453,6 @@ footer p{
     border-radius: 10px;
 }
 
-.contact-form form button:hover{
+.contact-form form button:hover {
     opacity: 0.9;
 }
